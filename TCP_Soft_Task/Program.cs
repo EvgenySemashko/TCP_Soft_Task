@@ -19,7 +19,7 @@
                 }
                 else
                 {
-                    wordAndCountPairs[word.ToLower()] = 1;
+                    wordAndCountPairs[word] = 1;
                 }
             }
         }
@@ -28,7 +28,7 @@
 
         foreach (var pair in sortedWordAndCountPairs)
         {
-            Console.WriteLine($"{pair.Key} - {pair.Value}");
+            Console.WriteLine($"{pair.Key.ToLower()} - {pair.Value}");
         }
     }
 }
